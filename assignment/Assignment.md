@@ -64,3 +64,8 @@ Note: the mark is not dependent on accuracy scores or any other metrics. We eval
 #### Note
 
 Keep in mind that you have to present your work at the end and the presentation should be 5-6 minutes.
+
+
+#### Examples:
+
+Link: https://www.kaggle.com/datasets/sergeymedvedev/customer_segmentation/code
