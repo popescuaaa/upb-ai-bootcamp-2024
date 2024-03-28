@@ -15,4 +15,4 @@
 
 ## Assignment
 
-TBD
+Customer lifetime value prediction

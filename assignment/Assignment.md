@@ -1,47 +1,66 @@
 # Optional assignment
 
-## What is Customer Churn?
+``` Note ```
 
-Customer churn is defined as when customers or subscribers discontinue doing business with a firm or service.
+Check the code starter.
 
-Customers in the telecom industry can choose from a variety of service providers and actively switch from one to the next. The telecommunications business has an annual churn rate of 15-25 percent in this highly competitive market.
+## Customer Lifetime Value prediction
 
-Individualized customer retention is tough because most firms have a large number of customers and can't afford to devote much time to each of them. The costs would be too great, outweighing the additional revenue. However, if a corporation could forecast which customers are likely to leave ahead of time, it could focus customer retention efforts only on these "high risk" clients. The ultimate goal is to expand its coverage area and retrieve more customers loyalty. The core to succeed in this market lies in the customer itself.
+We invest in customers (acquisition costs, offline ads, promotions, discounts & etc.) to generate revenue and be profitable. Naturally, these actions make some customers super valuable in terms of lifetime value but there are always some customers who pull down the profitability. We need to identify these behavior patterns, segment customers and act accordingly. Calculating Lifetime Value is the easy part. First we need to select a time window. It can be anything like 3, 6, 12, 24 months. By the equation below, we can have Lifetime Value for each customer in that specific time window:
 
-Customer churn is a critical metric because it is much less expensive to retain existing customers than it is to acquire new customers.
+``` Lifetime Value: Total Gross Revenue - Total Cost ```
 
-To detect early signs of potential churn, one must first develop a holistic view of the customers and their interactions across numerous channels. As a result, by addressing churn, these businesses may not only preserve their market position, but also grow and thrive. More customers they have in their network, the lower the cost of initiation and the larger the profit. As a result, the company's key focus for success is reducing client attrition and implementing effective retention strategy.
+This equation now gives us the historical lifetime value. If we see some customers having very high negative lifetime value historically, it could be too late to take an action.
 
+You are going to build a simple machine learning model that predicts our customers lifetime value. There is no restriction for you on this, you can go for very simple methods or even complicated ones; the most important is to present you work and we will evaluate it according to the points specified bellow.
 
-## Objectives:
-- Finding the % of Churn Customers and customers that keep in with the active services.
+#### Lifetime Value Prediction
+1. Define an appropriate time frame for Customer Lifetime Value calculation
+2. Identify the features we are going to use to predict future and create them
+3. Calculate lifetime value (LTV) for training the machine learning model
+4. Build and run the machine learning model
+5. Check if the model is useful
 
-- Analysing the data in terms of various features responsible for customer Churn
+#### How to decide the timeframe
 
-- Finding a most suited machine learning model for correct classification of Churn and non churn customers.
-
-## Dataset:
- [Telco Customer Churn](https://www.kaggle.com/bhartiprasad17/customer-churn-prediction/data)
-
- Download the csv data from Kaggle and then try to plot some metrics of the data using matplotlib or any other library to see how the users interact with the network.
-
-## Note:
-The data contains columns in text format. You have to assign numbers to all the entries to use the dataset. Check:
-
-1. Label encoder
-2. One-hot encoder
-### The data set includes information about:
-
-- Customers who left within the last month – the column is called Churn
-- Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
-- Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges
-- Demographic info about customers – gender, age range, and if they have partners and dependents
+Deciding the time frame really depends on your industry, business model, strategy and more. For some industries, 1 year is a very long period while for the others it is very short. In our example, we will go ahead with 6 months.
 
 
-## Tasks
+### Dataset
 
-- [ ] Download the dataset
-    - [ ] Split data in test and train!
-- [ ] Create a jupyter notebook with some plots of the user metrics in the data
-- [ ] Model this problem as a classification problem and predict the churn for the users.
-- [ ] Present your work!
+You will be using a custom dataset gathered from Kaggle. 
+
+Structure:
+
+```bash
+
+InvoiceNo
+StockCode,
+Description,
+Quantity,
+InvoiceDate,
+UnitPrice,
+CustomerID,
+Country
+
+```
+#### Tips and tricks
+
+- Explore the dataset for the assignment
+- Explain in comments and Markdown blocks what you have discovered
+- If you want to add / remove features from the dataset is up to you!
+- Use existing models for this: scikit-learn, xgboost or any other thing you want.
+- Try to use plots as much as you can.
+
+Note: the mark is not dependent on accuracy scores or any other metrics. We evaluate the work based on the points bellow and the presentation.
+
+#### Points to be covered for full grade
+
+- [ ] A correct modeling of the problem 
+- [ ] Data exploration 
+- [ ] Clean code
+- [ ] Comments
+
+#### Note
+
+Keep in mind that you have to present your work at the end and the presentation should be 5-6 minutes.
