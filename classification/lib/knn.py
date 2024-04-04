@@ -32,7 +32,7 @@ class KNN(object):
              y[i] is the label for X[i].
         """
         self.X_train = np.array([])
-        self.y_train = np.array([])
+        self.y_train = np.array([]) # label
 
 
     def set_values(self, X: np.ndarray, y: np.ndarray) -> None:
