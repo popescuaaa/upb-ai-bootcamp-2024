@@ -1,18 +1,5 @@
-# Orange Services [Data & AI Bootcamp 2024]
+Helpful sources:
 
-
-## Structure
-
-1. Intro to AI applications in telecom industry
-2. Clustering
-3. Regression 
-4. Classification
-5. Intro to NN [ Pytorch ]
-6. Anomaly detection
-7. Generative models
-8. TBD - probably assignment prsentations
-    
-
-## Assignment
-
-Customer lifetime value prediction
+- https://www.kaggle.com/code/shailaja4247/customer-lifetime-value-prediction/notebook
+- https://cloud.google.com/ai-platform/docs/clv-prediction-with-offline-training-train
+- https://machinelearninggeek.com/predicting-customer-lifetime-value-in-python/
